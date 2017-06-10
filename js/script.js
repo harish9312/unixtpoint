@@ -13,7 +13,7 @@
 
 			// route for the about page
 			.when('/about', {
-				templateUrl : 'pages/abo/',
+				templateUrl : 'pages/about.htm',
 				controller  : 'aboutController'
 			})
 
@@ -94,6 +94,9 @@
 				controller  : 'contactController'
 			})
 
+
+
+		
 	});
 
 	// create the controller and inject Angular's $scope

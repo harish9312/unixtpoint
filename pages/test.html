@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Example of Resizing the Bootstrap Modals</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        .modal-dialog {
+          width: 700px; /* New width for default modal */
+        }
+        .modal-sm {
+          width: 350px; /* New width for small modal */
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .modal-lg {
+          width: 950px; /* New width for large modal */
+        }
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+	<div class="alert alert-info">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Note!</strong> Open the output in a new blank tab and click the "show modal" button to understand how the resizing of modal window actually works.
+    </div>
+    <!-- Button HTML (to Trigger Modal) -->
+    <a href="#defaultModal" class="btn btn-lg btn-primary" data-toggle="modal">Show Default Modal</a>
+    <a href="#smallModal" class="btn btn-lg btn-primary" data-toggle="modal">Show Small Modal</a>
+    <a href="#largeModal" class="btn btn-lg btn-primary" data-toggle="modal">Show Large Modal</a>
+    
+    <!-- Default Modal HTML -->
+    <div id="defaultModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Default Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The default modal size has been changed. Now it is 100px wider than previous 600px wide modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I Understand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Small Modal HTML -->
+    <div id="smallModal" class="modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Small Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The small modal size has been changed. Now it is 50px wider than previous 300px wide modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I Understand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Large Modal HTML -->
+    <div id="largeModal" class="modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Large Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The large modal size has been changed. Now it is 50px wider than previous 900px wide modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I Understand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>     
+</body>
+</html>                                		

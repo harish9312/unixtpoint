@@ -30,15 +30,7 @@ img {
     float: left;
     border: 0px dotted black;
     margin: 0px 0px 15px 20px;
-
 }
-#dropdown:hover #dropdown-content 
-{
-    display:block;
-  
-  width:180px;
-}
-
 </style>
 
 </head>
@@ -46,14 +38,13 @@ img {
 <!--Header Close-->
 
 <body ng-controller="mainController">
-<h1>HELLO WORLD</h1>
 <br><br>
 <div class="container"></div>
 <div class="container">
 <a href="#/"><img class="" src="pn.png"></a>
 <br><font size="4" face="Century Gothic">
 <p>A Digital Way To Learn UNIX OS...!!!</h6>
-	</font>
+<p align="right"><font size="2">Designed &amp; Developed By <font size="4"><br/>Harish Soni</p></font>
 </div>
 </div>
 
@@ -71,9 +62,10 @@ img {
             </button>
             <a class="navbar-brand active" href="#/">UnixTPoinT</a>
           </div>
-          <div id="navbar dropdown" class="navbar-collapse collapse">
+          <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li ><a href="#about">Learn Basics</a></li>
+
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn Filters <span class="caret"></span></a>
                 <ul class="dropdown-menu">
